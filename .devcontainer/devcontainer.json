@@ -1,0 +1,17 @@
+{
+    "name": "My dev environment",
+    "image": "robertsilvatech/my-devcontainer",
+    //"build": {
+    //    // Path is relative to the devcontainer.json file.
+    //   "dockerfile": "Dockerfile"
+	//},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"moby": true,
+			"azureDnsAutoDetection": true,
+			"installDockerBuildx": true,
+			"version": "latest",
+			"dockerDashComposeVersion": "v2"
+		}
+	}
+}
